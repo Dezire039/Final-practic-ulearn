@@ -19,10 +19,10 @@ public class Main {
 
     public static void main(String[] args) {
         // Достаем данные из файла
-        //grantDataList = readCSVFile("Гранты.csv");
+        grantDataList = readCSVFile("Гранты.csv");
 
         // Создаем и заполняем базу данных
-        //createSQLite();
+        createSQLite();
 
         // Задание 1
         // Постройте график по среднему количеству рабочих мест для каждого фискального года
