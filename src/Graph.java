@@ -5,6 +5,9 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import javax.swing.*;
 
 public class Graph extends JFrame {
+    private int width;
+    private int height;
+
     public Graph(String title, String numberOfJobs, String fiscalYears) {
         super(title);
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -27,5 +30,11 @@ public class Graph extends JFrame {
         ChartPanel panel = new ChartPanel(chart);
         // Установка панели в качестве содержимого фрейма
         setContentPane(panel);
+    }
+
+    public void setGraphSize(int width, int height) {
+        this.width = width;
+        this.height = height;
+        setSize(width, height);
     }
 }
