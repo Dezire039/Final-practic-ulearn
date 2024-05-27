@@ -54,7 +54,6 @@ public class GrantData {
         return businessType;
     }
 
-    //d
     public void setBusinessType(String businessType) {
         this.businessType = businessType;
     }
